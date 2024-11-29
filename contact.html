@@ -21,11 +21,11 @@
   <body>
     <div class="banner-home">
       <!-- <div class=""></div> -->
-      <div class="element-container">
+      <div class="element-container" style="padding: 0">
         <header>
           <nav class="navbar">
             <div class="">
-              <img src="assets/img/logo.png" width="100%" alt="logo" />
+              <img src="assets/img/logo.png" width="65%" alt="logo" />
             </div>
             <div class="">
               <span class="menu-toggle">☰</span>
@@ -41,55 +41,48 @@
       </div>
     </div>
     <section class="element-container">
-      <div class="mt-mb-50">
-        <div class="form-container">
-          <h1>Contact Us</h1>
-          <div class="">
-            <img src="assets/img/title-line.svg" width="788px" height="18px" />
-          </div>
-          <form id="gdprForm" novalidate>
-            <div class="form-group mt-5">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required />
-              <span class="validation-icon">✓</span>
-              <div class="error-message" id="nameError">
-                Please enter your full name
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required />
-              <span class="validation-icon">✓</span>
-              <div class="error-message" id="emailError">
-                Please enter a valid email address
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-              ></textarea>
-              <span class="validation-icon">✓</span>
-              <div class="error-message" id="messageError">
-                Please enter your message
-              </div>
-            </div>
-
-            <div class="checkbox-group">
-              <input type="checkbox" id="marketing" name="marketing" />
-              <label for="marketing">
-                I would like to receive inquiry about your products and services
-              </label>
-            </div>
-
-            <button class="submit" type="submit">Submit</button>
-          </form>
+      <div class="form-container">
+        <h1>Contact Us</h1>
+        <div class="">
+          <img src="assets/img/title-line.svg" width="788px" height="18px" />
         </div>
+        <form id="gdprForm" novalidate>
+          <div class="form-group mt-5">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required />
+            <span class="validation-icon">✓</span>
+            <div class="error-message" id="nameError">
+              Please enter your full name
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+            <span class="validation-icon">✓</span>
+            <div class="error-message" id="emailError">
+              Please enter a valid email address
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="validation-icon">✓</span>
+            <div class="error-message" id="messageError">
+              Please enter your message
+            </div>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="marketing" name="marketing" />
+            <label for="marketing">
+              I would like to receive inquiry about your products and services
+            </label>
+          </div>
+
+          <button class="submit" type="submit">Submit</button>
+        </form>
       </div>
     </section>
     <footer class="banner-home">
