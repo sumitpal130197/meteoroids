@@ -108,7 +108,10 @@ h1 {
 }
 .banner-home {
   background-color: #021d32;
-  position: fixed; top: 0; width: 100%; z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -185,6 +188,34 @@ h1 {
   color: #000;
   margin-top: 20px;
 }
+.whatis h1 {
+  font-size: 37px;
+  font-weight: bold;
+}
+.whatis h4 {
+  font-size: 22px;
+  font-weight: 550;
+  color: #fff;
+}
+.whatis p {
+  margin-top: 30px;
+}
+.whatis ul {
+  padding-left: 0;
+}
+.whatis ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.whatis ul li p,
+.whatis ul li i {
+  font-size: 16px;
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 0;
+}
 .meteorite-section {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -202,7 +233,7 @@ h1 {
 }
 @media (max-width: 500px) {
   .meteorite-section h1 {
-    font-size: 38px;
+    font-size: 33px;
   }
 }
 @media (min-width: 992px) {
@@ -374,7 +405,7 @@ footer {
   background-size: cover;
 }
 .footer {
-  padding: 60px 30px 10px 30px;
+  /* padding: 60px 30px 10px 30px; */
 }
 .links {
   padding-left: 80px !important;
@@ -418,6 +449,7 @@ footer {
   background-color: #000000b9;
   color: #fff;
 }
+
 .gallery-dec h4 {
   font-size: 25px;
   font-weight: 550;
@@ -911,6 +943,9 @@ textarea.error {
 .parallax-container {
   position: relative;
   height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -922,16 +957,12 @@ textarea.error {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  /* transform: translateZ(-1px) scale(2);  */
 }
 
 .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 40px;
   color: white;
-  text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -939,7 +970,11 @@ textarea.error {
   font-size: 3rem;
   margin: 0;
 }
-
+@media (max-width: 767px) {
+  .overlay h1 {
+    font-size: 36px;
+  }
+}
 .overlay p {
   font-size: 1.5rem;
 }
@@ -1109,7 +1144,7 @@ section#counter-stats h1 {
 }
 .gallery {
   display: grid;
-  grid: auto-flow / 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid: auto-flow / 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-top: 50px;
 }
@@ -1157,7 +1192,9 @@ canvas {
 }
 @media (max-width: 767px) {
   #canvas_container h1 {
-    padding: 0px 0px;
+    padding: 0px 40px;
+
+    /* font-size: 22px; */
   }
 }
 #canvas_container {
@@ -1180,6 +1217,47 @@ canvas {
   text-decoration: none;
 }
 /*  */
-.mt-100{
+.mt-100 {
   margin-top: 100px;
+}
+.certificate {
+  margin-top: 10px;
+}
+.certificate img {
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media (max-width: 767px) {
+  .certificate img {
+    width: 100%;
+  }
+}
+.application ul {
+  list-style: none;
+}
+.application ul li {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+  font-weight: 550;
+}
+.description h6 {
+  color: #021d32;
+  font-weight: bold;
+  box-sizing: content-box;
+}
+
+.description ul li {
+  list-style: none;
+}
+.description ol li {
+  font-weight: 550;
+}
+.description ul li p {
+  font-size: 15px;
+}
+.description ul li p span {
+  font-weight: 550;
 }
