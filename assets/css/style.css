@@ -4,15 +4,14 @@
   margin: 0;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.1px;
   font-weight: 300;
   line-height: 26.86px;
-  color: #000;
   font-family: europa, sans-serif;
 }
-a:hover {
-  text-decoration: none;
+a, a:hover {
+  text-decoration: none !important;
 }
 .bggg {
   background-color: #fff;
@@ -215,6 +214,7 @@ h1 {
   margin-top: 0;
   color: #fff;
   margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .meteorite-section {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
@@ -321,17 +321,30 @@ h1 {
 }
 .more a {
   color: #fff;
+  cursor: pointer;
+}
+.more a:hover{
+  color: #fff;
+
 }
 .product-details {
-  background-color: #f1f1f1;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  /* background-color: #f1f1f1; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 40px;
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  /* padding: 40px; */
 }
 
+.mini-images img {
+  padding:5px ;
+
+}
+.mini-images img:hover{
+  border: 2px solid #021d32;
+}
 /* Item Info */
 .main-info h4 {
+  color: #021d32;
   font-size: 21px;
   margin-bottom: 0;
   font-weight: 550;
@@ -345,12 +358,17 @@ h1 {
 }
 
 .star-rating span {
-  color: gold;
+  color: #021d32;
 }
-
+.star-rating p{
+  font-size: 16px !important;
+  margin: 0 !important;
+  color: #808080 !important;
+}
 .main-info p {
   color: rgb(168, 14, 14);
-  font-size: 35px;
+  font-size:20px;
+  font-weight: bolder;
   margin: 25px 0px 15px 0px;
 }
 
@@ -390,8 +408,12 @@ label {
   margin-top: 20px;
 }
 .description h5 {
-  font-size: 20px;
-  font-weight: 550;
+  color: #021d32;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.description p {
+  font-size: 14px;
 }
 footer {
   background-image: linear-gradient(
@@ -691,6 +713,48 @@ canvas {
     font-size: 12px;
   }
 }
+.types
+{
+  border: 2px solid rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.type-meteor h1{
+  border: #021d32;
+  font-weight: bold;
+}
+.types h4{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.types p {
+  font-size: 14px;
+}
+.types-bg{
+  background-color: #021d32;
+  color: #fff;
+}
+/* .types-bg:hover{
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.types:hover{
+  background-color: #021d32;
+  color: #fff;
+} */
+
+.zoom-img  {
+  width: 100%;
+  height:auto;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.zoom-img:hover   {
+  transform: scale(1.1);
+}
 /* form */
 
 .form-container {
@@ -699,7 +763,9 @@ canvas {
   background: white;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 h1 {
@@ -1222,17 +1288,44 @@ canvas {
 }
 .certificate {
   margin-top: 10px;
+  /* display: grid; */
+  gap: 30px;
+  /* grid: auto-flow / 1fr 1fr 1fr 1fr; */
 }
-.certificate img {
-  width: 50%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.certificate {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-@media (max-width: 767px) {
-  .certificate img {
-    width: 100%;
-  }
+.certificate::after:hover{
+  background-color: #000000;
 }
+.certificate-details
+{
+  /* border: 2px solid red; */
+
+}
+.details p
+{
+margin-bottom: 0;
+font-size: 14px;
+text-decoration: none;
+}
+.details span
+{
+background-color: #021d32e3;
+font-size: 12px;
+padding: 8px;
+color: #fff;
+border-radius: 20px;
+}
+.details span:hover
+{
+background-color: #1d1d1de3;
+font-size: 12px;
+padding: 8px;
+color: #fff;
+border-radius: 20px;
+}
+
 .application ul {
   list-style: none;
 }
@@ -1260,4 +1353,8 @@ canvas {
 }
 .description ul li p span {
   font-weight: 550;
+}
+.pdf::before:hover{
+  content: "";
+  background-color: #000;
 }
