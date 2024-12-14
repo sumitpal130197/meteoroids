@@ -10,7 +10,8 @@ p {
   line-height: 26.86px;
   font-family: europa, sans-serif;
 }
-a, a:hover {
+a,
+a:hover {
   text-decoration: none !important;
 }
 .bggg {
@@ -323,9 +324,8 @@ h1 {
   color: #fff;
   cursor: pointer;
 }
-.more a:hover{
+.more a:hover {
   color: #fff;
-
 }
 .product-details {
   /* background-color: #f1f1f1; */
@@ -336,10 +336,34 @@ h1 {
 }
 
 .mini-images img {
-  padding:5px ;
-
+  padding: 5px;
 }
-.mini-images img:hover{
+.product-img {
+  position: sticky;
+  align-self: flex-start;
+  top: 104px;
+  bottom: 0;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .mini-images {
+    display: none;
+  }
+  .main-info
+  {
+    margin-top: 20px;
+  }
+  .product-img-big-screen{
+    display: none;
+  }
+}
+@media (min-width:768px) {
+  .product-img-small-screen{
+    display: none;
+  }
+}
+.mini-images img:hover {
   border: 2px solid #021d32;
 }
 /* Item Info */
@@ -360,14 +384,14 @@ h1 {
 .star-rating span {
   color: #021d32;
 }
-.star-rating p{
+.star-rating p {
   font-size: 16px !important;
   margin: 0 !important;
   color: #808080 !important;
 }
 .main-info p {
   color: rgb(168, 14, 14);
-  font-size:20px;
+  font-size: 20px;
   font-weight: bolder;
   margin: 25px 0px 15px 0px;
 }
@@ -713,26 +737,26 @@ canvas {
     font-size: 12px;
   }
 }
-.types
-{
+.types {
   border: 2px solid rgb(235, 235, 235);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
 }
-.type-meteor h1{
+.type-meteor h1 {
   border: #021d32;
   font-weight: bold;
 }
-.types h4{
+.types h4 {
   text-transform: uppercase;
   font-weight: bold;
 }
 .types p {
   font-size: 14px;
 }
-.types-bg{
+.types-bg {
   background-color: #021d32;
   color: #fff;
 }
@@ -745,14 +769,14 @@ canvas {
   color: #fff;
 } */
 
-.zoom-img  {
+.zoom-img {
   width: 100%;
-  height:auto;
+  height: auto;
   overflow: hidden;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.zoom-img:hover   {
+.zoom-img:hover {
   transform: scale(1.1);
 }
 /* form */
@@ -1293,37 +1317,33 @@ canvas {
   /* grid: auto-flow / 1fr 1fr 1fr 1fr; */
 }
 .certificate {
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.certificate::after:hover{
+.certificate::after:hover {
   background-color: #000000;
 }
-.certificate-details
-{
+.certificate-details {
   /* border: 2px solid red; */
-
 }
-.details p
-{
-margin-bottom: 0;
-font-size: 14px;
-text-decoration: none;
+.details p {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-decoration: none;
 }
-.details span
-{
-background-color: #021d32e3;
-font-size: 12px;
-padding: 8px;
-color: #fff;
-border-radius: 20px;
+.details span {
+  background-color: #021d32e3;
+  font-size: 12px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 20px;
 }
-.details span:hover
-{
-background-color: #1d1d1de3;
-font-size: 12px;
-padding: 8px;
-color: #fff;
-border-radius: 20px;
+.details span:hover {
+  background-color: #1d1d1de3;
+  font-size: 12px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 20px;
 }
 
 .application ul {
@@ -1354,7 +1374,7 @@ border-radius: 20px;
 .description ul li p span {
   font-weight: 550;
 }
-.pdf::before:hover{
+.pdf::before:hover {
   content: "";
   background-color: #000;
 }
